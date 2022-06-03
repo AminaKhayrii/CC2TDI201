@@ -43,7 +43,7 @@
         android:id="@+id/btnEdit"
         style="@style/btnActivite"
         android:layout_below="@+id/txtcpt"
-        android:layout_marginEnd="53dp"
+        android:layout_marginEnd="60dp"
         android:onClick="modifier"
         android:text="@string/btnEdit"/>
 

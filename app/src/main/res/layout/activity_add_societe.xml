@@ -33,24 +33,30 @@
         style="@style/zoneTexts"
         android:layout_below="@+id/txtSecteur"
         android:hint="Tapez le nombre d'employe.." />
+    <LinearLayout
+        we
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/btnActivite"
+            android:text="enregistrer"
+            android:onClick="enregistrer"
+            android:id="@+id/EnrBtn"/>
 
-    <Button
-        style="@style/btnActivite"
-        android:layout_below="@+id/txtNB"
-        android:text="@string/btnSave"
-        android:layout_marginEnd="53dp"
-        android:onClick="enregistrer"
-        android:id="@+id/btnEnregistrer"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/btnActivite"
+            android:text="Annuler"
+            android:onClick="annuler"
+            android:id="@+id/AnBtn"/>
+    </LinearLayout>
 
-    <Button
-        style="@style/btnActivite"
-        android:layout_below="@+id/txtNB"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="53dp"
-        android:layout_toRightOf="@+id/btnEnregistrer"
-        android:text="@string/btnCnacel"
-        android:onClick="annuler"
-        android:id="@+id/btnAnnuler"/>
+
 
 
 
