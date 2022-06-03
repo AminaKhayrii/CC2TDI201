@@ -15,7 +15,42 @@
         android:background="#F30A0A"
         android:textColor="@color/white"
         android:textSize="55dp"
+        android:id="@+id/view"
         />
+    <EditText
+        android:layout_below="@+id/view"
+        style="@style/zoneTexts"
+        android:hint="Tapez le nom de la societe.."
+        android:id="@+id/txtNom"
+        />
+    <EditText
+        android:layout_below="@+id/txtNom"
+        style="@style/zoneTexts"
+        android:hint="Tapez le secteur d'activite.."
+        android:id="@+id/txtSecteur"/>
+    <EditText
+        android:layout_below="@+id/txtSecteur"
+        style="@style/zoneTexts"
+        android:hint="Tapez le nombre d'employe.."
+        android:id="@+id/txtcpt"/>
+
+    <Button
+        style="@style/btnActivite"
+        android:layout_below="@+id/txtcpt"
+        android:text="@string/btnSave"
+        android:layout_marginEnd="53dp"
+        android:onClick="enregistrer"
+        android:id="@+id/btne"/>
+
+    <Button
+        style="@style/btnActivite"
+        android:layout_below="@+id/txtcpt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:layout_toRightOf="@+id/btne"
+        android:text="@string/btnCnacel"
+        android:onClick="annuler"
+        android:id="@+id/btna"/>
 
 
 
