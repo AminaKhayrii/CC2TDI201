@@ -4,4 +4,6 @@
     <string name="btn2">Editer une societe</string>
     <string name="btn3">liste de tous les societes</string>
 
+    <string name="btnSave">Enregistrer</string>
+    <string name="btnCnacel">Annuler</string>
 </resources>
