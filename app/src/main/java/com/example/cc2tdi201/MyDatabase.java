@@ -71,4 +71,17 @@ public class MyDatabase extends SQLiteOpenHelper {
 
         return listeSociete;
     }
+    public static Societe getOneSociete(SQLiteDatabase sqLiteDatabase, int id){
+        Societe sc=null;
+        Cursor cur=sqLiteDatabase.rawQuery("Select * from "+table+" where id="+id,null);
+
+        if (cur.moveToNext()){
+            sc=new Societe();
+            sc.setId(cur.getInt(0));
+            sc.setNom(cur.getString(1));
+            sc.setSecteur(cur.getString(2));
+            sc.setNbEmploye(cur.getInt(3));
+        }
+        return sc;
+    }
 }
