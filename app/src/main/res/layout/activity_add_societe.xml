@@ -34,26 +34,28 @@
         android:layout_below="@+id/txtSecteur"
         android:hint="Tapez le nombre d'employe.." />
     <LinearLayout
-        we
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="300dp">
         <Button
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/btnActivite"
             android:text="enregistrer"
             android:onClick="enregistrer"
-            android:id="@+id/EnrBtn"/>
+            android:id="@+id/btnEnregistrer"/>
 
         <Button
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/btnActivite"
             android:text="Annuler"
             android:onClick="annuler"
-            android:id="@+id/AnBtn"/>
+            android:id="@+id/btnAnnuler"/>
     </LinearLayout>
 
 
