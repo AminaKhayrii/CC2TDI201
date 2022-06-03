@@ -7,7 +7,6 @@
     tools:context=".AddSociete">
 
     <TextView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ajouter Socite"
@@ -28,29 +27,30 @@
         style="@style/zoneTexts"
         android:hint="Tapez le secteur d'activite.."
         android:id="@+id/txtSecteur"/>
+
     <EditText
-        android:layout_below="@+id/txtSecteur"
+        android:id="@+id/txtNB"
         style="@style/zoneTexts"
-        android:hint="Tapez le nombre d'employe.."
-        android:id="@+id/txtcpt"/>
+        android:layout_below="@+id/txtSecteur"
+        android:hint="Tapez le nombre d'employe.." />
 
     <Button
         style="@style/btnActivite"
-        android:layout_below="@+id/txtcpt"
+        android:layout_below="@+id/txtNB"
         android:text="@string/btnSave"
         android:layout_marginEnd="53dp"
         android:onClick="enregistrer"
-        android:id="@+id/btne"/>
+        android:id="@+id/btnEnregistrer"/>
 
     <Button
         style="@style/btnActivite"
-        android:layout_below="@+id/txtcpt"
+        android:layout_below="@+id/txtNB"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="53dp"
-        android:layout_toRightOf="@+id/btne"
+        android:layout_toRightOf="@+id/btnEnregistrer"
         android:text="@string/btnCnacel"
         android:onClick="annuler"
-        android:id="@+id/btna"/>
+        android:id="@+id/btnAnnuler"/>
 
 
 

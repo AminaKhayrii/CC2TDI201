@@ -17,6 +17,13 @@ public class AddSociete extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_societe);
+
+        t1.findViewById(R.id.txtNom);
+        t2.findViewById(R.id.txtSecteur);
+        t3.findViewById(R.id.txtNB);
+        btnSave.findViewById(R.id.btnEnregistrer);
+        btnCancel.findViewById(R.id.btnAnnuler);
+        data=new MyDatabase(this);
     }
 
     public void enregistrer(View view) {
