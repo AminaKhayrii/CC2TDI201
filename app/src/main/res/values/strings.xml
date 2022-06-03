@@ -6,4 +6,7 @@
 
     <string name="btnSave">Enregistrer</string>
     <string name="btnCnacel">Annuler</string>
+
+    <string name="btnEdit">Modifier</string>
+    <string name="btnDelete">Supprimer</string>
 </resources>

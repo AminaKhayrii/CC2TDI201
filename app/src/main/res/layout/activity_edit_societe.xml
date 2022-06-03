@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditSociete">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editer Socite"
+        android:textAlignment="center"
+        android:background="#F30A0A"
+        android:textColor="@color/white"
+        android:textSize="55dp"
+        android:id="@+id/view"
+        />
+    <Spinner
+        android:id="@+id/spr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"/>
+
+    <EditText
+        android:layout_below="@+id/spr"
+        style="@style/zoneTexts"
+        android:hint="Tapez votre Raison social.."
+        android:id="@+id/txtrc"
+        />
+    <EditText
+        android:layout_below="@+id/txtrc"
+        style="@style/zoneTexts"
+        android:hint="Tapez votre Adresse.."
+        android:id="@+id/txtads"/>
+    <EditText
+        android:layout_below="@+id/txtads"
+        style="@style/zoneTexts"
+        android:hint="Tapez votre Capital.."
+        android:id="@+id/txtcpt"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        style="@style/btnActivite"
+        android:layout_below="@+id/txtcpt"
+        android:layout_marginEnd="53dp"
+        android:onClick="modifier"
+        android:text="modifier" />
+
+    <Button
+        style="@style/btnActivite"
+        android:layout_below="@+id/txtcpt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:layout_toRightOf="@+id/btnEdit"
+        android:text="supprimer"
+        android:onClick="supprimer"
+        android:id="@+id/btndelete"/>
+
+
+</RelativeLayout>
