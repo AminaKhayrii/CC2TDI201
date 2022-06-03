@@ -45,7 +45,7 @@
         android:layout_below="@+id/txtcpt"
         android:layout_marginEnd="53dp"
         android:onClick="modifier"
-        android:text="modifier" />
+        android:text="@string/btnEdit"/>
 
     <Button
         style="@style/btnActivite"
@@ -53,7 +53,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="53dp"
         android:layout_toRightOf="@+id/btnEdit"
-        android:text="supprimer"
+        android:text="@string/btnDelete"
         android:onClick="supprimer"
         android:id="@+id/btndelete"/>
 
