@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CC2TDI201">
         <activity
+            android:name=".listeSociete"
+            android:exported="false" />
+        <activity
+            android:name=".EditSociete"
+            android:exported="false" />
+        <activity
+            android:name=".AddSociete"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
